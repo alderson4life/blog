@@ -1,0 +1,366 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #171A1C;
+  color: #E1E1E1;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.onediv {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 0; 
+  margin-bottom: 25px;
+}
+.trailer {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.review-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.review {
+  width: 800px;
+  padding: 20px;
+  background-color: #1e2427;
+  color: #E1E1E1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.text2-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+
+.text2 {
+  width: 800px;
+  padding: 20px;
+  background-color: #1e2427;
+  color: #E1E1E1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  padding: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+h2:hover {
+  color: #4F5D75;
+  cursor: default;
+}
+/*  bipgraphy styling */
+.bio {
+  font-size: 18px; 
+}
+/* character analysis */ 
+.analysis {
+  font-size: 18px;
+}
+
+/* navigation bar */
+nav {
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+
+nav::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* profile card color setting and hover effect*/
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.profile-card {
+  background-color: #1e2427;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  color: #e1e1e1;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  display: block;
+  filter: grayscale(1) contrast(1.5) brightness(0.8) saturate(0.8);
+}
+
+.profile-card h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.profile-card p {
+  font-size: 18px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.profile-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-card li {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e1e1e1;
+  margin-bottom: 10px;
+}
+
+.profile-card li strong {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+.profile-card a {
+  color: #7effb0;
+  text-decoration: none;
+}
+
+.profile-card a:hover {
+  color: #4eff7e;
+  text-decoration: underline;
+}
+
+/* Layout for three profile cards */
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-card {
+  margin: 20px;
+}
+
+/* loading screen 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #171A1C;
+  z-index: 9999;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #E1E1E1;
+  border-top-color: transparent;
+  animation: spin 1s infinite;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/*article source link letterboxd*/
+
+.linkboxd {
+  text-align: center;
+}
+
+.articlesrc {
+  color: antiquewhite;
+  padding: 20px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.articlesrc:hover {
+  color: #4F5D75;
+  cursor: default;
+}
+
+/* card */
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background-color: #171A1C;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover .switchpic1 {
+  filter: grayscale(0%);
+}
+
+.card:hover .switchpic2 {
+  filter: grayscale(100%);
+}
+
+.bio-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.bio {
+  width: 800px;
+  padding: 20px;
+  background-color: #1e2427;
+  color: #E1E1E1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+.analysis-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+
+.analysis {
+  width: 800px;
+  padding: 20px;
+  background-color: #1e2427;
+  color: #E1E1E1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* bruh */
+.profile-container,.profile-container2,.review-box,.profile-card,.profileElliot {
+  transition: all 0.3s ease;
+}
+
+.profile-container,.review-box,.profile-card,.profileElliot:hover {
+  transform: scale(1.05);
+}
+
+/* profile for elliot's page */
+.profile-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+
+.profileElliot {
+  background-color: #1e2427;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  color: #e1e1e1;
+}
+
+.profileElliot img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  display: block;
+  filter: grayscale(1) contrast(1.5) brightness(0.8) saturate(0.8);
+}
+
+.profileElliot h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.iconic2-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.iconic2 {
+  width: 800px;
+  padding: 20px;
+  background-color: #1e2427;
+  color: #E1E1E1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+.iconiclink {
+  color: antiquewhite;
+  padding: 20px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.iconicklink:hover {
+  color: #4F5D75;
+  cursor: default;
+}
